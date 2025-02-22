@@ -9,4 +9,4 @@ jupyterlab
 matplotlib
 seaborn
 scipy
-itqdm
+tqdm
