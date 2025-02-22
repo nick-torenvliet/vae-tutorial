@@ -1,0 +1,12 @@
+--index-url https://download.pytorch.org/whl/nightly/cpu
+torch
+--extra-index-url https://download.pytorch.org/whl/nightly/cpu
+torchvision --pre
+torchaudio --pre
+
+--index-url https://pypi.org/simple
+jupyterlab
+matplotlib
+seaborn
+scipy
+itqdm

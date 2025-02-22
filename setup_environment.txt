@@ -1,0 +1,6 @@
+python3 -m venv .vaet
+echo 'alias vaet="source ~/Dev/.vaet/bin/activate"' >> ~/.zprofile
+source ~/.zprofile
+vaet
+pip install --upgrade pip
+pip install -r requirements.txt
