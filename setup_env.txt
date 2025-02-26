@@ -1,0 +1,61 @@
+# install brew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# you should get some reasonable output
+brew --version
+
+brew update
+
+brew install python
+
+python3 --version
+
+# check that homebrew'w python is being used
+# output should be like : /opt/homebrew/bin/python3
+which python3
+
+python3 -m ensurepip --default-pip
+python3 -m pip install --upgrade pip
+
+# verify pip 
+pip3 --version
+
+# test if the python REPL works, exit with CTRL+D
+python3
+
+# install venv hmmm... did chatgpt do this right?
+python3 -m pip install --user virtualenv
+
+# create virtual env... 
+cd 
+mkdir Dev
+cd Dev
+python3 -m venv .vaet
+
+# activate venv 
+source .vaet/bin/activate
+
+# deactivate venv 
+deactivate
+
+# usable mechanics
+echo 'alias vaet="source ~/Dev/.vaet/bin/activate"' >> ~/.zprofile
+source ~/.zprofile
+
+# last steps
+vaet
+pip install --upgrade pip
+pip install -r requirements.txt
+git clone git@github.com:nick-torenvliet/vae-tutorial.git
+
+# fire it up
+cd vae-tutorial
+jupyter lab
+
+
+
+
+
+
+
+
