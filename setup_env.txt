@@ -16,7 +16,7 @@ python3 --version
 which python3
 
 python3 -m ensurepip --default-pip
-python3 -m pip install --upgrade pipvae
+python3 -m pip install --upgrade pip
 
 # verify pip 
 pip3 --version
